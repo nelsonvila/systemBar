@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Productos</a>
+                    <a href="/producto">Productos</a>
                     <a href="https://laracasts.com">Ventas</a>
                     <a href="https://laravel-news.com">Caja</a>
                     <a href="https://blog.laravel.com">Empleados</a>
