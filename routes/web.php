@@ -21,4 +21,3 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/producto', 'ProductoController@index')->name('producto');
 
-
