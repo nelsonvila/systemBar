@@ -120,7 +120,7 @@
                                                    class="col-md-4 col-form-label text-md-right">Stock</label>
 
                                             <div class="col-md-6">
-                                                <input id="stock" type="text"
+                                                <input id="stock" type="number" min="1"
                                                        class="form-control{{ $errors->has('stock') ? ' is-invalid' : '' }}"
                                                        name="stock" value="{{ old('stock') }}" required autofocus>
 

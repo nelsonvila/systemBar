@@ -26,7 +26,9 @@ class ProductoController extends Controller
 
     public function create()
     {
-        //
+
+
+
     }
 
     /**
@@ -37,7 +39,13 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $producto = new productos();
+        $producto->codigo= $request->get("codigo");
+        $producto->descripcion= $request->get("descripcion");
+        $producto->stock= $request->get("stock");
+        $producto->stock= $request->get("stock");
+
+
     }
 
     /**
