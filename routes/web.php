@@ -20,4 +20,7 @@ Route::get('/', function () {
 })->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/producto', 'ProductoController@index')->name('producto');
+Route::post('/producto/new', 'ProductoController@store');
+Route::get('/proveedores', 'ProveedorController@index')->name('proveedores');
+Route::post('/proveedores/new', 'ProveedorController@store');
 

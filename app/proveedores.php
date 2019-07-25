@@ -6,15 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property integer $id
- * @property string $descripcion
- * @property string $codigo
- * @property float $precio
- * @property float $costo
- * @property integer $stock
+ * @property string $nombre
+ * @property string $CUIT
+ * @property string $razonsocial
+ * @property string $direccion
+ * @property int $telefono
+ * @property string $mail
  * @property string $created_at
  * @property string $updated_at
  */
-class productos extends Model
+class proveedores extends Model
 {
     /**
      * The "type" of the auto-incrementing ID.
@@ -22,11 +23,10 @@ class productos extends Model
      * @var string
      */
     protected $keyType = 'integer';
-    protected $primaryKey = 'id';
 
     /**
      * @var array
      */
-    protected $fillable = ['descripcion', 'codigo', 'precio', 'costo', 'stock', 'created_at', 'updated_at'];
+    protected $fillable = ['nombre', 'CUIT', 'razonsocial', 'direccion', 'telefono', 'mail', 'created_at', 'updated_at'];
 
 }

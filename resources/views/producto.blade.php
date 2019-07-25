@@ -38,7 +38,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form method="POST" action="/gestoria/carpetas/new">
+                                    <form method="POST" action="producto/new">
                                         @csrf
                                         {{--                                        <div class="form-group row">--}}
                                         {{--                                            <label for="operacion"--}}

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\productos;
+use App\proveedores;
 use Illuminate\Http\Request;
 
-class ProductoController extends Controller
+class ProveedorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,21 +14,21 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        $productos = productos::all();
+        $proveedores = proveedores::all();    //defino variable proveedores le paso el modelo =proveedores, retorna la vista proveedores
 //        $mensaje= 'Este es un mensaje';
         //return $productos;
-        return view('producto')
-            ->with('productos', $productos);
-
+        return view('proveedores')
+            ->with('proveedores', $proveedores);
     }
 
-
-
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
-
-
-
+        //
     }
 
     /**
@@ -39,18 +39,16 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        $producto = new productos();
-        $producto->codigo= $request->get("codigo");
-        $producto->descripcion= $request->get("descripcion");
-        $producto->stock= $request->get("stock");
-        $producto->costo= $request->get("costo");
-        $producto->precio= $request->get("precio");
-        $producto->created_at=now();
-        $producto->save();
+        $proveedor = new proveedores();
+        $proveedor->nombre= $request->get("nombre");
+        $proveedor->razonsocial= $request->get("razonsocial");
+        $proveedor->direccion= $request->get("direccion");
+        $proveedor->telefono= $request->get("telefono");
+        $proveedor->mail= $request->get("mail");
+        $proveedor->created_at=now();
+        $proveedor->save();
 
         return back();
-
-
     }
 
     /**
