@@ -146,10 +146,7 @@
                                             <td>DIRECCION</td>
                                             <td>TELEFONO</td>
                                             <td>MAIL</td>
-                                            {{--<td>PRECIO</td>--}}
 
-                                            {{-- <td>Roles</td>
-                                             <td>Nivel</td>--}}
                                             <td>Acciones</td>
                                         </tr>
                                         </thead>
