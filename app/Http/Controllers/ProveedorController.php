@@ -45,6 +45,7 @@ class ProveedorController extends Controller
         $proveedor->direccion= $request->get("direccion");
         $proveedor->telefono= $request->get("telefono");
         $proveedor->mail= $request->get("mail");
+        $proveedor->CUIT= $request->get("cuit");
         $proveedor->created_at=now();
         $proveedor->save();
 

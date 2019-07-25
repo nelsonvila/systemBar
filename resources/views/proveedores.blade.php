@@ -30,15 +30,9 @@
                                                    class="col-md-4 col-form-label text-md-right">Nombre</label>
 
                                             <div class="col-md-6">
-                                                <input id="name" type="text"
-                                                       class="form-control{{ $errors->has('codigo') ? ' is-invalid' : '' }}"
-                                                       name="codigo" value="{{ old('codigo') }}" required autofocus>
+                                                <input id="nombre" type="text" name="nombre"
+                                                       class="form-control" required>
 
-                                                @if ($errors->has('codigo'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('codigo') }}</strong>
-                                    </span>
-                                                @endif
                                             </div>
                                         </div>
 
@@ -47,15 +41,10 @@
                                                    class="col-md-4 col-form-label text-md-right">CUIT</label>
 
                                             <div class="col-md-6">
-                                                <input id="name" type="text"
-                                                       class="form-control{{ $errors->has('codigo') ? ' is-invalid' : '' }}"
-                                                       name="codigo" value="{{ old('codigo') }}" required autofocus>
+                                                <input cuit type="text" name="cuit"
+                                                       class="form-control"
+                                                       required autofocus>
 
-                                                @if ($errors->has('codigo'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('codigo') }}</strong>
-                                    </span>
-                                                @endif
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -63,15 +52,10 @@
                                                    class="col-md-4 col-form-label text-md-right">Razon Social</label>
 
                                             <div class="col-md-6">
-                                                <input id="descripcion" type="text"
-                                                       class="form-control{{ $errors->has('descripcion') ? ' is-invalid' : '' }}"
-                                                       name="descripcion" value="{{ old('descripcion') }}" required autofocus>
+                                                <input id="razonsocial" type="text" name="razonsocial"
+                                                       class="form-control"
+                                                     required autofocus>
 
-                                                @if ($errors->has('descripcion'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('descripcion') }}</strong>
-                                    </span>
-                                                @endif
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -79,50 +63,33 @@
                                                    class="col-md-4 col-form-label text-md-right">Direccion</label>
 
                                             <div class="col-md-6">
-                                                <input id="stock" type="number" min="1"
-                                                       class="form-control{{ $errors->has('stock') ? ' is-invalid' : '' }}"
-                                                       name="stock" value="{{ old('stock') }}" required autofocus>
-
-                                                @if ($errors->has('stock'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('stock') }}</strong>
-                                    </span>
-                                                @endif
-                                            </div>
+                                                <input id="direccion" type="text" name="direccion"
+                                                       class="form-control"
+                                                       required autofocus>
+                                           </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="namelbl"
                                                    class="col-md-4 col-form-label text-md-right">Telefono</label>
 
                                             <div class="col-md-6">
-                                                <input id="costo" type="text"
-                                                       class="form-control{{ $errors->has('costo') ? ' is-invalid' : '' }}"
-                                                       name="costo" value="{{ old('costo') }}" required autofocus>
+                                                <input id="telefono" type="number" name="telefono"
+                                                       class="form-control"
+                                                       required autofocus>
 
-                                                @if ($errors->has('costo'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('costo') }}</strong>
-                                    </span>
-                                                @endif
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="namelbl"
-                                                   class="col-md-4 col-form-label text-md-right">Mail</label>
+                                                   class="col-md-4 col-form-label text-md-right">E-Mail</label>
 
                                             <div class="col-md-6">
-                                                <input id="precio" type="text"
-                                                       class="form-control{{ $errors->has('precio') ? ' is-invalid' : '' }}"
-                                                       name="precio" value="{{ old('precio') }}" required autofocus>
+                                                <input id="email" type="email" name="mail"
+                                                       class="form-control"
+                                                     required >
 
-                                                @if ($errors->has('precio'))
-                                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('precio') }}</strong>
-                                    </span>
-                                                @endif
                                             </div>
                                         </div>
-
 
 
                                         <div class="form-group row mb-0">
@@ -145,8 +112,7 @@
                                             <td>RAZON SOCIAL</td>
                                             <td>DIRECCION</td>
                                             <td>TELEFONO</td>
-                                            <td>MAIL</td>
-
+                                            <td>E-MAIL</td>
                                             <td>Acciones</td>
                                         </tr>
                                         </thead>
