@@ -187,7 +187,10 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
+    ' suppliers ' => [
 
+        Yajra \ Datatables \ DatatablesServiceProvider :: class,
+    ],
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
@@ -225,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Datatables' => Yajra \ Datatables \ Facades \ Datatables :: class,
 
     ],
 

@@ -23,10 +23,8 @@ class ProductoController extends Controller
     }
 
 
-
     public function create()
     {
-
 
 
     }
@@ -34,29 +32,27 @@ class ProductoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         $producto = new productos();
-        $producto->codigo= $request->get("codigo");
-        $producto->descripcion= $request->get("descripcion");
-        $producto->stock= $request->get("stock");
-        $producto->costo= $request->get("costo");
-        $producto->precio= $request->get("precio");
-        $producto->created_at=now();
+        $producto->codigo = $request->get("codigo");
+        $producto->descripcion = $request->get("descripcion");
+        $producto->stock = $request->get("stock");
+        $producto->precio = $request->get("precio");
+        $producto->costo = $request->get("costo");
+        $producto->created_at = now();
         $producto->save();
 
         return back();
-
-
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -67,7 +63,7 @@ class ProductoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -78,8 +74,8 @@ class ProductoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -90,7 +86,7 @@ class ProductoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
