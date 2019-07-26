@@ -21,8 +21,7 @@
                     <a href="https://laracasts.com">Ventas</a>
                     <a href="https://laravel-news.com">Caja</a>
                     <a href="https://blog.laravel.com">Empleados</a>
-                    <a href="/proveedores">Proveedores</a>
-                    <a href="https://nova.laravel.com">Entradas</a>
+                    <a href="https://nova.laravel.com">Proveedores</a>
                     {{--                    <a href="https://forge.laravel.com">Forge</a>--}}
                     {{--                    <a href="https://github.com/laravel/laravel">GitHub</a>--}}
                 </div>

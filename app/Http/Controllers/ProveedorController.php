@@ -20,6 +20,9 @@ class ProveedorController extends Controller
         return view('proveedores')
             ->with('proveedores', $proveedores);
     }
+    public  function tabla(){
+        return view('tabla');
+    }
 
     /**
      * Show the form for creating a new resource.

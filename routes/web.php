@@ -24,4 +24,5 @@ Route::post('/producto/new', 'ProductoController@store');
 Route::post('/producto/new', 'ProductoController@store');
 Route::get('/proveedores', 'ProveedorController@index')->name('proveedores');
 Route::post('/proveedores/new', 'ProveedorController@store');
+Route::get('/index', 'HomeController@index2');
 

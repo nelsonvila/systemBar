@@ -26,14 +26,14 @@
                     <div class="card">
 
                         <div class="card-header">
-                            <a class="btn btn-primary" href="/home">Volver</a><br>
+                            <a class="btn btn-primary" href="/">Volver</a><br>
                         </div>
 
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
                                     <button class="btn btn-success">Nuevo
-                                        <i class="fa fa-plus"></i></button>
+                                        <i class="fa fa-plus-circle"></i></button>
                                     </button>
 
                                 </div>
