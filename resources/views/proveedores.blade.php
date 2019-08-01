@@ -46,8 +46,8 @@
             </a></div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index">
                         <i class="material-icons">dashboard</i>
                         <p>Inicio</p>
                     </a>
@@ -76,14 +76,14 @@
                         <p>Caja</p>
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="javascript:void(0)">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="/proveedores">
                         <i class="fa fa-address-book-o" aria-hidden="true"></i>
                         <p>Proveedores</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="/entrada">
                         <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                         <p>Entradas</p>
                     </a>
@@ -97,12 +97,13 @@
             </ul>
         </div>
     </div>
+    <br>
     <div class="main-panel">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="javascript:void(0)"> <b>Administración de Proveedores</b></a>
+                    <a class="navbar-brand" href="javascript:void(0)"> <h2><b>Administración de Proveedores</b></h2></a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
                     <span class="sr-only">Toggle navigation</span>
@@ -186,35 +187,34 @@
                                     <table class="table">
                                         <thead class=" text-primary">
                                         <th>
-                                          Nombre
+                                       <center><b> Nombre</b></center>
                                         </th>
                                         <th>
-                                            CUIT
+                                            <center><b> CUIT</b></center>
                                         </th>
                                         <th>
-                                            Razon Social
+                                            <center><b> Razon Social</b></center>
                                         </th>
                                         <th>
-                                            Direccion
+                                            <center><b> Direccion</b></center>
                                         </th>
                                         <th>
-                                            Telefono
+                                            <center><b> Telefono</b></center>
                                         </th>
                                         <th>
-                                            E-Mail
+                                            <center><b> E-Mail</b></center>
                                         </th><th>
-                                            Acciones
+                                            <center><b> Acciones</b></center>
                                         </th>
                                         </thead>
                                         <tbody>
                                         @foreach($proveedores as $proveedor)
                                             <tr>
-                                                <td>{{$proveedor->nombre}}</td>
-                                                <td>{{$proveedor->CUIT}}</td>
-                                                <td>{{$proveedor->razonsocial}}</td>
-                                                <td>{{$proveedor->direccion}}</td>
-                                                <td>{{$proveedor->telefono}}</td>
-                                                <td>{{$proveedor->mail}}</td>
+                                                <td><center>{{$proveedor->nombre}}</center></td>
+                                                <td><center>{{$proveedor->CUIT}}</center></td>
+                                                <td> <center>{{$proveedor->razonsocial}}</center></td>
+                                                <td><center>{{$proveedor->direccion}}</center></td>
+                                                <td><center>{{$proveedor->mail}}</center></td>
 
 
                                             </tr>
@@ -752,6 +752,24 @@
 
             });
         });
+
+            $('#myTable').DataTable({
+                responsive: true,
+                iDisplayLength: '20',
+                order: [[0, 'asc']],
+                dom: 'Bfrtip',
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json'
+                },
+                buttons: [
+                    'copy', 'excelHtml5', {
+                        extend: 'pdfHtml5',
+                        orientation: 'landscape',
+                        pageSize: 'A4'
+                    }
+                ]
+
+            });
     });
 </script>
 </body>

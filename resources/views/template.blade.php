@@ -61,13 +61,13 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="/proveedores">
                         <i class="fa fa-address-book-o" aria-hidden="true"></i>
                         <p>Proveedores</p>
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="/entrada">
                         <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                         <p>Entradas</p>
                     </a>
