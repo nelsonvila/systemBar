@@ -72,7 +72,7 @@
                                                 <td>{{$producto->stock}}</td>
                                                 <td>{{$producto->costo}}</td>
                                                 <td>{{$producto->precio}}</td>
-<td>dsd</td>
+                                                {{--<td>dsd</td>--}}
 
 
                                             </tr>

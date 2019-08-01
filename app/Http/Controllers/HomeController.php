@@ -29,4 +29,8 @@ class HomeController extends Controller
     {
         return view('template');
     }
+    public function index3()
+    {
+        return view('tabla');
+    }
 }
